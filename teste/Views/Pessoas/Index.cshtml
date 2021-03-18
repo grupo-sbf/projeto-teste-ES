@@ -4,37 +4,68 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+    <body id="page-top">
 
-<h2>Index</h2>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.email)
-        </th>
-        <th></th>
-    </tr>
+                        <div class="container-fluid">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.email)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.codigo }) |
-            @Html.ActionLink("Details", "Details", new { id=item.codigo }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.codigo })
-        </td>
-    </tr>
-}
+                            <!-- Page Heading -->
+                            <h1 class="h3 mb-2 text-gray-800">Pessoas</h1>
+                            <p class="mb-4">
+                                @Html.ActionLink("Cadastrar nova Pessoa", "Create")
+                            </p>
 
-</table>
+                            <!-- DataTales Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Pessoas cadastrada</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>E-mail</th>
+                                                    <th>Novo Endereço</th>
+                                                    <th>Ação</th>
+                                                </tr>
+                                            </thead>
+                                          
+                                            <tbody>
+                                                @foreach (var item in Model)
+                                                {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.nome)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.email)
+                                                    </td>
+                                                    <td>
+                                                        @Html.ActionLink(" Cadastrar Endereço ", "Endereco", new { id = item.id })
+                                                    </td>
+                                                    <td>
+                                                        @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                                                        @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                                                        @Html.ActionLink("Delete", "Delete", new { id = item.id }) 
+                                                        
+                                                    </td>
+                                                </tr>
+                                                }
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>

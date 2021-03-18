@@ -9,5 +9,9 @@ namespace teste.Models
     public class Contexto:  DbContext 
     {
         public DbSet<Pessoa> Pessoas { get; set; }
+
+        public DbSet<Endereco> GetEnderecoes { get; set; }
+       
+
     }
 }

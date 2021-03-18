@@ -118,7 +118,7 @@ C:\Users\Pichau\source\repos\teste\teste\bin\pt-br\Microsoft.Owin.Security.Faceb
 C:\Users\Pichau\source\repos\teste\teste\bin\pt-br\Microsoft.Owin.Security.Google.resources.dll
 C:\Users\Pichau\source\repos\teste\teste\bin\pt-br\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\Pichau\source\repos\teste\teste\bin\pt-br\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Pichau\source\repos\teste\teste\obj\Debug\teste.csprojAssemblyReference.cache
 C:\Users\Pichau\source\repos\teste\teste\obj\Debug\teste.csproj.CopyComplete
 C:\Users\Pichau\source\repos\teste\teste\obj\Debug\teste.dll
 C:\Users\Pichau\source\repos\teste\teste\obj\Debug\teste.pdb
-C:\Users\Pichau\source\repos\teste\teste\obj\Debug\teste.csprojAssemblyReference.cache
